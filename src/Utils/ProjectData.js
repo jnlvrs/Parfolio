@@ -1,7 +1,7 @@
 const ProjectData = [
   {
     title: "React Personal Site",
-    link: "",
+    link: "https://github.com/jnlvrs/Parfolio",
   },
   {
     title: "Express Backend Routes",
