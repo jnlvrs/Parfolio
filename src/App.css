@@ -194,6 +194,7 @@ h1, h2 {
 }
 
 .about-heading-container {
+  z-index: 1;
   display: block;
   position: relative;
   text-align: center;
@@ -317,7 +318,7 @@ h1, h2 {
   align-items: center;
   height: 100vh;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .formSection {
@@ -348,7 +349,7 @@ h1, h2 {
 }
 
 .sendForm {
-  z-index: -1;
+  z-index: 2;
   padding: 40px 0;
 }
 
@@ -467,5 +468,24 @@ h1, h2 {
     height: 220px;
   }
   /*------Projects-------*/
-  
+  .formSection {
+    flex-direction: row;
+    height: 500px;
+  }
+
+  .info {
+    justify-content: center;
+    padding-top:0;
+    padding-bottom:0;
+    height: 500px;
+    width: 300px;
+    border-right: 10px solid rgba(30, 30, 30, 0.8);
+    border-bottom: none;
+  }
+  .sendForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
 }

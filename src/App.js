@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Connect from "./components/Connect";
+import NeonParticlesBg from './components/NeonParticlesBg';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Projects />
         <Connect />
         <ParticlesBg />
+        {/* <NeonParticlesBg /> */}
       </div>
     </div>
   );
