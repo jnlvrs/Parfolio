@@ -1,7 +1,7 @@
 :root {
   --green1: #273e3f;
   --green2: #14272b;
-  --green3: #142327;
+  --green3: #0f1f22;
   --darkgreen: rgba(20, 20, 20, 0.6);
   --darkgreen2: #14171c;
   --highlight: #0ab4b4;
@@ -17,7 +17,7 @@ h1, h2 {
 
 .particle {
   padding-left: 42px;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* ----------Global backgrounds--------------- */
@@ -39,6 +39,14 @@ h1, h2 {
 
 .bg5 {
   background-color: var(--darkgreen2);
+}
+
+.bg3g {
+  background-image: linear-gradient(#0f1f22 0%,#142327 35%,#1e3638 100%);
+}
+
+.bg2g {
+  background-image: linear-gradient(#1e3638 0%,#142327 70%,#0f1f22 100%);
 }
 
 /* ----------Global highlights--------------- */
@@ -217,9 +225,10 @@ h1, h2 {
 }
 
 .about-img {
+  object-fit: contain;
   border: 5px solid white;
-  width: 200px;
-  height: 220px;
+  width: 139px;
+  height: 250px;
 }
 
 .about-p-container {
@@ -235,6 +244,8 @@ h1, h2 {
   justify-content: center;
   height: 100vh;
   align-items: center;
+  z-index: 2;
+  position: relative;
 }
 
 .projects-h2 {
@@ -317,8 +328,7 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
-  z-index: 2;
+  
 }
 
 .formSection {
@@ -405,8 +415,8 @@ h1, h2 {
     padding-bottom: 80px;
   }
   .about-img {
-    width: 300px;
-    height: 330px;
+    width: 195px;
+    height: 350px;
   }
   .about-p-container {
     font-size: 18px;
@@ -455,17 +465,18 @@ h1, h2 {
     justify-content: center;
     width: 50%;
     height: 250px;
+    margin-top: 2em;
   }
   .about-img-container {
     display:flex;
     align-content:center;
     padding: 25px 50px;
+    padding-top: 0;
   }
   .about-img {
-    
     border: 5px solid white;
-    width: 200px;
-    height: 220px;
+    /* width: 200px;
+    height: 220px; */
   }
   /*------Projects-------*/
   .formSection {

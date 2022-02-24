@@ -11,6 +11,10 @@ const ProjectData = [
     title: "Angular Crud Project",
     link: "https://github.com/jnlvrs/MovieShowcase",
   },
+  {
+    title: "Final Project",
+    link: "https://github.com/jnlvrs/team-beyond-coding-frontend",
+  },
 ];
 
 export default ProjectData;

@@ -3,7 +3,7 @@ import HeadShot from "../img/HeadShot.jpg";
 
 function About() {
   return (
-    <div id="About" className="about-container bg3 borderb">
+    <div id="About" className="about-container bg3g borderb">
       <div className="about-heading-container">
         <h2>About Me</h2>
         <div className="about-p-img-container">
