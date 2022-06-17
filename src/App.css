@@ -221,7 +221,7 @@ h1, h2 {
 }
 
 .about-img-container { 
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .about-img {
@@ -337,6 +337,7 @@ h1, h2 {
   text-align: center;
   width: 250px;
   color: white;
+  z-index: 2;
 }
 
 .info {
@@ -486,10 +487,9 @@ h1, h2 {
 
   .info {
     justify-content: center;
-    padding-top:0;
-    padding-bottom:0;
+    padding:0 10px;
     height: 500px;
-    width: 300px;
+    width: 330px;
     border-right: 10px solid rgba(30, 30, 30, 0.8);
     border-bottom: none;
   }

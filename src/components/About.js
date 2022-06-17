@@ -12,16 +12,16 @@ function About() {
           </div>
           <div className="about-p-container bg1 hl2 bxs">
             <p>
-              &emsp;&emsp;Hi, am JavaScript Developer located in Minnesota. I
-              learning and growing a passion for coding thanks to my cousins. I
-              am well organized individual that enjoys solving problems. I have
-              a high drive and interest to move forward in my life as well as
-              the career.
+              &emsp;&emsp;Hi, am a JavaScript Developer located in Minnesota. I
+              am learning and growing a passion for coding thanks to my cousins.
+              I am a well-organized individual that enjoys solving problems and
+              has a high drive and interest to move forward in my life as well
+              as my career.
             </p>
             <br />
             <p>
               &emsp;&emsp;I am a father of three kiddos that I very much love.
-              Interested in the entire backend spectrum and working on projects
+              Interested in the entire full stack spectrum and working on projects
               with positive people!
             </p>
           </div>
