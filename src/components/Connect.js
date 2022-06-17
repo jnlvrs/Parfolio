@@ -29,15 +29,15 @@ function Connect() {
           <h2>Lets Connect!</h2>
           <div className="form-input">
             <div>
-              <label for="name" />
+              <label htmlFor="name" />
               <input type="text" className="inputFields hl1 bg3" id="name" name="name" placeholder="Name" required  />
             </div>
             <div>
-              <label for="email" />
+              <label htmlFor="email" />
               <input type="email" className="inputFields hl1 bg3" id="email"  name="email"  placeholder="Email"  required />
             </div>
             <div>
-              <label for="message" />
+              <label htmlFor="message" />
               <textarea type="text" className="inputFields hl1 bg3" id="message" name="message" placeholder="Message" required />
             </div>
             <div id="center-btn">

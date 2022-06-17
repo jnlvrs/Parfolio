@@ -24,7 +24,7 @@ function Navbar() {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.title} onClick={showSidebar}>
+                  <Link to={item.title} spy={true} smooth={true} onClick={showSidebar}>
                     {item.icon}
                     <span className="span-menu">{item.title}</span>
                   </Link>
