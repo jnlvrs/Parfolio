@@ -13,11 +13,11 @@ function App() {
     <div className="App-container">
       <Navbar />
       <div className="sections">
-        {/* <Home /> */}
+        <Home />
         <About />
-        {/* <Projects /> */}
-        {/* <Connect /> */}
-        {/* <ParticlesBg /> */}
+        <Projects />
+        <Connect />
+        <ParticlesBg />
       </div>
     </div>
   );

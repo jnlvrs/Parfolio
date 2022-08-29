@@ -132,6 +132,7 @@ h1, h2 {
 
 .nav-text a:hover {
   background-color: var(--green2);
+  color: rgba(255, 166, 0);
 }
 
 .nav-menu-items {
@@ -173,6 +174,10 @@ h1, h2 {
   padding: 5px;
   width: 250px;
   text-align: center;
+}
+
+.rt-container h2 {
+  color: rgba(255, 166, 0);
 }
 
 /* ----------rotating text --------- */
@@ -311,9 +316,9 @@ h1, h2 {
         ),
     linear-gradient(
         to right,
-        #0ab4b4,
-        #0ab4b4,
-        #0ab4b4
+        rgba(255, 166, 0),
+        rgba(255, 166, 0),
+        rgba(255, 166, 0)
         );
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
@@ -321,24 +326,32 @@ h1, h2 {
   transition: background-size 400ms;
   list-style: none;
   padding: 5px 15px; 
-
+  padding-right: 37px
 }
+
+.arr-dwn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
 .fs-btn:hover {
   padding-left: -10px;
   background-size: 0 3px, 100% 3px;
 }
 .list-toggle-on ul {
+  
   list-style: none;
   padding-inline-start: 0;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding:20px 5px;
 }
 
 .list-toggle-on ul li {
   padding: 3px;
-  color: rgba(255, 166, 0);
+  color: rgb(255, 166, 0);
   
 }
 .list-toggle-on ul li:nth-child(1){
@@ -379,6 +392,11 @@ h1, h2 {
 .list-toggle-on ul li:nth-child(8){
   animation: animateIn 300ms linear;
   animation-delay: 800ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(9){
+  animation: animateIn 300ms linear;
+  animation-delay: 900ms;
   animation-fill-mode: both;
 }
 @keyframes animateIn {
@@ -577,17 +595,20 @@ h1, h2 {
   .about-p-container {
     font-size: 18px;
   }
+  .list-toggle-on {
+    position : absolute;
+  }
   .list-toggle-on ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    position : relative
   }
 
   .list-toggle-on ul li {
     padding: 10px;
     border-right: 1px solid ;
   }
-  .list-toggle-on ul li:nth-child(8) {
+  .list-toggle-on ul li:nth-child(9) {
     border-right: none;
   }
   /* -----Projects-----  */
@@ -689,7 +710,11 @@ h1, h2 {
     flex-direction: row;
     height: 500px;
   }
-
+  .list-toggle-on {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .info {
     justify-content: center;
     padding:0 10px;

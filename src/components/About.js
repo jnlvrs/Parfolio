@@ -1,13 +1,12 @@
 import React, {useState} from "react";
-import HeadShot from "../img/HeadShot2.jpg";
-import Wife from "../img/Wife.jpg";
-import Kiddos from "../img/Kiddos.jpg";
+
+import * as BsIcons from "react-icons/bs";
 
 function About() {
   const [open, setOpen] = useState(true);
-
+  
   const showToggle = () => setOpen(!open);
-
+  
   return (
     <div id="About" className="about-container bg2 borderb">
       <div className="about-heading-container">
@@ -37,6 +36,7 @@ function About() {
         <div className="fullstack-container">
           <button onClick={showToggle} className="fs-btn">
             Familiar Technologies
+            {open ?<BsIcons.BsFillCaretUpFill className="arr-dwn arr-svg" /> : <BsIcons.BsFillCaretDownFill className="arr-dwn arr-svg"/>}
           </button>
           <div className={open ? "list-toggle-on" : "list-toggle-off"}>
             <ul>
@@ -48,6 +48,7 @@ function About() {
               <li data-count="6">HTML5</li>
               <li data-count="7">CSS3</li>
               <li data-count="8">Github</li>
+              <li data-count="9">VS Code</li>
             </ul>
           </div>
         </div>
