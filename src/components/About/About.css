@@ -215,12 +215,7 @@
   display:none;
 }
 @media screen and (min-width: 768px){
-  .about-heading-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -100px;
-  }
+  
   .about-heading-container h2 {
     font-size: 45px;
   }
@@ -253,7 +248,11 @@
 }
 
 @media screen and (min-width: 1020px){
-    .about-p-img-container{
+  .about-container {
+    display: flex;
+    align-items: center;
+  }
+  .about-p-img-container{
     display: flex;
     justify-content: center;
     align-content:center;

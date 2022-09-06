@@ -24,16 +24,12 @@
   flex-direction: column;
   height: 120px;
   width: 200px;
-  background-color: #17141d;
+  background-color: var(--darkgreen2);
   border-radius: 10px;
   box-shadow: -1px 0 20px #000;
   transition: 0.4s ease-out;
   position: relative;
 }
-
-/* .card:not(:first-child) {
-  margin-left: -50px;
-} */
 
 .card:hover {
   transform: translateX(50px);
@@ -82,4 +78,12 @@
   width: 88%;
   height: 5px;
   transition: 0.4s ease-out;
+}
+/* .project-title {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+} */
+.project-title a{
+  text-decoration: none;
 }
