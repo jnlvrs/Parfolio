@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "./Modal";
+import Modal from "./Projects/Modal";
 import Backdrop from "./Backdrop";
 
 function Card({ text, Link }) {

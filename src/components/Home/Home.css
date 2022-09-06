@@ -1,0 +1,48 @@
+/* ---------Home------------ */
+.main-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-container {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 5px;
+  width: 250px;
+  text-align: center;
+}
+
+.rt-container h2 {
+  color: rgba(255, 166, 0);
+}
+
+/* ----------rotating text --------- */
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px){ 
+  /*--------Home---------*/
+  .title-container {
+    height: 135px;
+    width: 450px;
+    padding: 20px;
+    font-size: 22px;
+  }
+}
+

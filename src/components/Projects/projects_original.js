@@ -1,5 +1,5 @@
-import Card from "./Card";
-import ProjectData from "../Utils/ProjectData";
+import Card from "../Card";
+import ProjectData from "../../Utils/ProjectData";
 
 function Projects(props) {
   return (

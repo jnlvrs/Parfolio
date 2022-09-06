@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
+import './NavBar.css'
 import * as CgIcons from "react-icons/cg";
 import { Link } from "react-scroll";
-import { SidebarData } from "../Utils/SidebarData";
+import { SidebarData } from "../../Utils/SidebarData";
 
 import { IconContext } from "react-icons";
 
@@ -16,7 +16,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#f6fafb" }}>
         <div className="navbar bg5">
           <Link to="#" className="menu-bars">
-            <CgIcons.CgMenuGridR onClick={showSidebar} />
+            <CgIcons.CgMenuGridR className='gridIcon' onClick={showSidebar} />
           </Link>
         </div>
         <nav className={sidebar ? "bg5 nav-menu active" : "bg5 nav-menu"}>

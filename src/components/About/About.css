@@ -1,0 +1,318 @@
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+}
+
+.about-heading-container {
+  z-index: 1;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-heading-container h2 {
+  font-size: 30px;
+  text-decoration: underline var(--highlight);
+}
+
+.about-p-img-container {
+  padding-top: 40px;
+}
+
+.about-img-container { 
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding-top: 15px;
+}
+
+.me{
+  background-image: url("../../img/HeadShot2.jpg");
+}
+.wife {
+  background-image: url("../../img/Wife.jpg");
+}
+.kiddos {
+  background-image: url("../../img/Kiddos.jpg");
+}
+
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+/* this dictates the position of the tooltip*/
+.avatar::before,
+.avatar::after {
+  --scale: 0;
+  --arrow-size: 10px;
+  --tooltip-color: var(--darkgreen2);
+  
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 50ms transform;
+  transform-origin: bottom center;
+}
+
+.avatar::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip);
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  width: 100%;
+  background-color:var(--tooltip-color);
+}
+
+.avatar:hover::before,
+.avatar:hover::after {
+  --scale: 1;
+}
+
+.avatar::after {
+  --translate-y:calc(-1 * var(--arrow-size));
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color:var(--tooltip-color);
+  transform-origin: top center;
+}
+
+.about-p-container {
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.fullstack-container {
+  padding-top: 20px;
+}
+
+.fs-btn {
+  position : relative;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background:
+    linear-gradient(
+        to right,
+        transparent,
+        transparent
+        ),
+    linear-gradient(
+        to right,
+        rgba(255, 166, 0),
+        rgba(255, 166, 0),
+        rgba(255, 166, 0)
+        );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  list-style: none;
+  padding: 5px 15px; 
+  padding-right: 37px
+}
+
+.arr-dwn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+.fs-btn:hover {
+  padding-left: -10px;
+  background-size: 0 3px, 100% 3px;
+}
+.list-toggle-on ul {
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding:20px 5px;
+}
+
+.list-toggle-on ul li {
+  padding: 3px;
+  color: rgb(255, 166, 0);
+  
+}
+.list-toggle-on ul li:nth-child(1){
+  animation: animateIn 300ms linear;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(2){
+  animation: animateIn 300ms linear;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(3){
+  animation: animateIn 300ms linear;
+  animation-delay: 300ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(4){
+  animation: animateIn 300ms linear;
+  animation-delay: 400ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(5){
+  animation: animateIn 300ms linear;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(6){
+  animation: animateIn 300ms linear;
+  animation-delay: 600ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(7){
+  animation: animateIn 300ms linear;
+  animation-delay: 700ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(8){
+  animation: animateIn 300ms linear;
+  animation-delay: 800ms;
+  animation-fill-mode: both;
+}
+.list-toggle-on ul li:nth-child(9){
+  animation: animateIn 300ms linear;
+  animation-delay: 900ms;
+  animation-fill-mode: both;
+}
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform:  translateX(-60px);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.list-toggle-off {
+  display:none;
+}
+@media screen and (min-width: 768px){
+  .about-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+  }
+  .about-heading-container h2 {
+    font-size: 45px;
+  }
+  .about-p-img-container {
+    padding-top: 80px;
+  }
+  .about-img-container { 
+    padding-bottom: 40px;
+  }
+  .about-p-container {
+    font-size: 18px;
+  }
+  .list-toggle-on {
+    position : relative;
+    
+  }
+  .list-toggle-on ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .list-toggle-on ul li {
+    padding: 10px 5px;
+    border-right: 1px solid ;
+  }
+  .list-toggle-on ul li:nth-child(8) {
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 1020px){
+    .about-p-img-container{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    padding-top: 80px
+  }
+  .about-p-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 250px;
+    margin-top: 2em;
+  }
+  .about-img-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 135px;
+    height: 320px;
+  }
+  /* this dictates the position of the tooltip*/
+  .avatar::before,
+  .avatar::after {
+    --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: var(--darkgreen2);
+    
+    position: absolute;
+    right: -.25rem;
+    left: 50%;
+    transform: translateX(var(--translate-x, 0)) translateY(100%) scale(var(--scale));
+    transition: 50ms transform;
+    transform-origin: center left;
+  }
+
+  .avatar::before {
+    --translate-x: calc(60% - var(--arrow-size));
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    width: 100%;
+    background-color:var(--tooltip-color);
+  }
+
+  .avatar:hover::before,
+  .avatar:hover::after {
+    --scale: 1;
+  }
+
+  .avatar::after {
+    --translate-x: 15%;
+    position: absolute;
+    top:17px;
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-right-color:var(--tooltip-color);
+    transform-origin: center right;
+  }
+}

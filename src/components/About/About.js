@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import './About.css'
 import * as BsIcons from "react-icons/bs";
 
 function About() {
@@ -43,12 +43,11 @@ function About() {
               <li data-count="1">JavaScript</li>
               <li data-count="2">React/JSX</li>
               <li data-count="3">Angular</li>
-              <li data-count="4">OOP</li>
-              <li data-count="5">Express-Node</li>
-              <li data-count="6">HTML5</li>
-              <li data-count="7">CSS3</li>
-              <li data-count="8">Github</li>
-              <li data-count="9">VS Code</li>
+              <li data-count="4">Express-Node</li>
+              <li data-count="5">HTML5</li>
+              <li data-count="6">CSS3</li>
+              <li data-count="7">Github</li>
+              <li data-count="8">VS Code</li>
             </ul>
           </div>
         </div>

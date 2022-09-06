@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-
+import './Connect.css'
 function Connect() {
 
   const sendEmail = (e) => {

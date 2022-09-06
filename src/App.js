@@ -1,11 +1,11 @@
 import './App.css';
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import ParticlesBg from "./components/ParticlesBg";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Connect from "./components/Connect";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Connect from "./components/Connect/Connect";
 
 
 function App() {

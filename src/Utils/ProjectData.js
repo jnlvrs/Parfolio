@@ -1,10 +1,10 @@
 const ProjectData = [
   {
-    title: "React Personal Site",
+    title: "React Porfolio",
     link: "https://github.com/jnlvrs/Parfolio",
   },
   {
-    title: "Express Backend Routes",
+    title: "Express.js Routes",
     link: "https://github.com/jnlvrs/ExpressBulletingBoard",
   },
   {
@@ -12,7 +12,7 @@ const ProjectData = [
     link: "https://github.com/jnlvrs/MovieShowcase",
   },
   {
-    title: "Final Project",
+    title: "Group Ride",
     link: "https://github.com/jnlvrs/team-beyond-coding-frontend",
   },
 ];
