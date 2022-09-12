@@ -35,13 +35,13 @@
 }
 
 .me{
-  background-image: url("../../img/HeadShot2.jpg");
+  background-image: url("../../../public/Imgs/HeadShot2.jpg");
 }
 .wife {
-  background-image: url("../../img/Wife.jpg");
+  background-image: url("../../../public/Imgs/Wife.jpg");
 }
 .kiddos {
-  background-image: url("../../img/Kiddos.jpg");
+  background-image: url("../../../public/Imgs/Kiddos.jpg");
 }
 
 
