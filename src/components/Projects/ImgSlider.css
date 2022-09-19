@@ -5,89 +5,51 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-    
+}   
+
 .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-    
+    display: none;
 }
-    
 .slide.active {
-    padding-top: 78px;
-    opacity: 1;
-    /* transition-duration: 1s ; */
-    /* transform:scale(1.03); */
+    padding-top: 15px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
 }
-             
-img {
-    border:1px solid #0080ff;
-    max-width: 90%;
-    object-fit: scale-down;
-    /* box-shadow: 0 30px 50px -15px #0080ff */
-    box-shadow:-10px 0px 13px -7px #0080ff, 10px 0px 13px -7px #0080ff, 5px 5px 15px 5px rgba(0,0,0,0);
+.not-active {
+    opacity: 0.2;
 }
-        
-
-.feed-selector {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-
-}
-.side-arrow.desktop {
-    display: none;
-}
-        
-img {
-    opacity: .2;
-    object-fit:scale-down;
-    width: 50px;
-    height: 50px;
-}
-img:hover {
+.img {
+    width: 300px;
+    /* height: auto; */
+    object-fit: fill;
+}       
+.active,
+.not-active:hover {
     transform: scale(1.1);
     opacity: 1;
 }
-img.active {
-    opacity: 1;
+
+.feed-selector {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;  
 }
 
-.side-arrows-mobile {
-
+.sml-imgs-container {
+    padding: 5px;
+    padding-top: 8px
+}
+.sml-imgs-container img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5%;
 }
 .side-arrow {
     font-size: 7rem;
-    color:#0057ff;
+    color:rgba(255, 166, 0);
     z-index: 10;
     cursor: pointer;
     user-select: none;
-}
-
-@media screen and (min-width: 768px) {
-    .slider {
-        width: 55%;
-    }   
-    img {
-        max-width: 550px;
-        max-height: 310px;
-    }
-
-    .side-arrows-mobile {
-        display: none;
-    }
-    .feed-selector {
-
-    }   
-    .side-arrow.desktop{
-        display: block;
-        font-size: 7rem;
-        color:#0057ff;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        margin-top: -31px;
-    }
-}    
+}  

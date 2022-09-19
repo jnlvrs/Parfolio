@@ -2,24 +2,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   z-index: 1;
   position: relative;
 }
-
 .projects-h2 {
   padding-top: 30px;
   font-size: 30px;
   text-decoration: underline var(--highlight);
+  padding-bottom: 20px;
 }
-.carousel-container {
-  margin-left: 43px;
-}
-.slide-container {
+.showcases-container{ 
   display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  padding-bottom: 40px;
 }
-.slide-container img {
-  width: 200px;
-  height: 200px;
+.showcase-title {
+  
+  color: white;
+  font-size: 20px;
+  /* border-bottom: 2px solid rgba(255, 166, 0); */
+  padding-top: 60px;
+}
+.showcase-container a {
+  font-size: 18px;
+  padding-top: 10px;
+ 
+  text-decoration: none;
+  color: var(--highlight);
+  cursor: pointer;
+  border-bottom: 1px solid var(--highlight);
+}
+.showcase-container:nth-child(4) .slider {
+  padding-bottom:15px;
+}
+.showcase-container:nth-child(4) .slider .feed-selector {
+  display: none;
+}
+.showcase-container a:hover {
+  position : relative;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  color:rgba(255, 166, 0);
+  border-bottom: 1px solid rgba(255, 166, 0)
 }
