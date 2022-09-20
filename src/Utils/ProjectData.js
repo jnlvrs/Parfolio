@@ -3,6 +3,7 @@ import Up5_1 from "../Images/P4/Up5_1.png";
 import Up5_2 from "../Images/P4/Up5_2.png";
 import Up5_3 from "../Images/P4/Up5_3.png";
 import Up5_4 from "../Images/P4/Up5_4.png";
+import Up5_5 from "../Images/P4/Up5_5.png";
 import GR1 from "../Images/P3/GR1.png";
 import GR2 from "../Images/P3/GR2.png";
 import GR3 from "../Images/P3/GR3.png";
@@ -17,19 +18,19 @@ const ProjectData = [
     title: "Angular Crud Project",
     link: "https://github.com/jnlvrs/MovieShowcase",
     images: [
-      { 
+      {
         id: 1,
         img: movie1,
       },
-      { 
+      {
         id: 2,
         img: movie2,
       },
-      { 
+      {
         id: 3,
         img: movie3,
       },
-      { 
+      {
         id: 4,
         img: movie4,
       },
@@ -39,19 +40,19 @@ const ProjectData = [
     title: "Group Ride",
     link: "https://github.com/jnlvrs/team-beyond-coding-frontend",
     images: [
-      { 
+      {
         id: 1,
         img: GR1,
       },
-      { 
+      {
         id: 2,
         img: GR2,
       },
-      { 
+      {
         id: 3,
         img: GR3,
       },
-      { 
+      {
         id: 4,
         img: GR4,
       },
@@ -61,21 +62,25 @@ const ProjectData = [
     title: "Up5 Gaming",
     link: "https://github.com/Up5-Gaming/Up5MainSite",
     images: [
-      { 
+      {
         id: 1,
         img: Up5_1,
       },
-      { 
+      {
         id: 2,
         img: Up5_2,
       },
-      { 
+      {
         id: 3,
         img: Up5_3,
       },
-      { 
+      {
         id: 4,
         img: Up5_4,
+      },
+      {
+        id: 5,
+        img: Up5_5,
       },
     ],
   },
@@ -86,7 +91,7 @@ const ProjectData = [
       {
         id: 1,
         img: PC1,
-      }
+      },
     ],
   },
 ];

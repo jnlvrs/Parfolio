@@ -13,7 +13,7 @@ function Projects() {
       {ProjectData.map((projects, index) => {
         return (
           <div className="showcase-container" key={index}>
-            <h3 className="showcase-title">{projects.title}</h3>
+            <h3 className="showcase-title">Title: {projects.title}</h3>
             <ImgSlider slides={projects.images}  />
             <a href={projects.link} >See Code at Github</a>
           </div>

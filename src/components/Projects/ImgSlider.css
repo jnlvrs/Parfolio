@@ -53,3 +53,39 @@
     cursor: pointer;
     user-select: none;
 }  
+
+@media screen and (min-width: 768px){ 
+    .slide.active {
+        
+        width: 550px;
+        height: 350px;
+    }
+    .img {
+        padding: 15px;
+        width: 500px;
+        object-fit: scale-down;
+    }
+}
+
+@media screen and (min-width: 1024px){ 
+    .slide.active {
+        width: 950px;
+        height: 550px;
+    }
+    .img {
+        padding: 15px;
+        width: 900px;
+        object-fit: scale-down;
+    }
+    .sml-imgs-container img {
+        width: 55px;
+        height: 55px;
+        border-radius: 10%;
+    }
+    .side-arrow {
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        padding-top: 12px;
+    } 
+}

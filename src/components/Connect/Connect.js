@@ -1,19 +1,23 @@
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import './Connect.css'
+import "./Connect.css";
 function Connect() {
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm( "service_lvodjop", "template_iuiggxn", e.current, "_heA5qAiONAxU3dfE" )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      });
-    e.target.reset();  
+    emailjs
+      .sendForm("service_lvodjop", "template_iuiggxn", e.current, "_heA5qAiONAxU3dfE")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
   return (
     <div id="Connect" className="connect-container bg3">
@@ -30,18 +34,18 @@ function Connect() {
           <div className="form-input">
             <div>
               <label htmlFor="name" />
-              <input type="text" className="inputFields hl1 bg3" id="name" name="name" placeholder="Name" required  />
+              <input type="text" className="inputFields hl1 bg3"  id="name" name="name"  placeholder="Name" required />
             </div>
             <div>
               <label htmlFor="email" />
-              <input type="email" className="inputFields hl1 bg3" id="email"  name="email"  placeholder="Email"  required />
+              <input type="email" className="inputFields hl1 bg3" id="email" name="email" placeholder="Email" required />
             </div>
             <div>
               <label htmlFor="message" />
               <textarea type="text" className="inputFields hl1 bg3" id="message" name="message" placeholder="Message" required />
             </div>
             <div id="center-btn">
-              <input type="submit"  className="send-btn bg3" id="send-btn" name="send" alt="send" value="Send" />
+              <input type="submit" className="send-btn bg3" id="send-btn" name="send" alt="send" value="Send" onClick={sendEmail} />
             </div>
           </div>
         </form>
