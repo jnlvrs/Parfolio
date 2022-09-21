@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Porfolio/static/css/main.7e645df5.css",
+    "main.js": "/Porfolio/static/js/main.cf6e4fd8.js",
+    "static/media/GR1.png": "/Porfolio/static/media/GR1.0f1a4adb806f732f9a88.png",
+    "static/media/GR3.png": "/Porfolio/static/media/GR3.8d9693eeab062232d728.png",
+    "static/media/Up5_4.png": "/Porfolio/static/media/Up5_4.5a5e55e71bd890261dd0.png",
+    "static/media/Up5_2.png": "/Porfolio/static/media/Up5_2.dd6a9d883616ee8d2f81.png",
+    "static/media/Up5_3.png": "/Porfolio/static/media/Up5_3.e63c85898c1c37a6dced.png",
+    "static/media/Pc1.png": "/Porfolio/static/media/Pc1.8a0308a4686d628833bd.png",
+    "static/media/Up5_1.png": "/Porfolio/static/media/Up5_1.f894ffe1df5045b52c68.png",
+    "static/media/GR2.png": "/Porfolio/static/media/GR2.1bdd2cfd396502ff7ccd.png",
+    "static/media/Kiddos.jpg": "/Porfolio/static/media/Kiddos.44ee45825847ca1c3bca.jpg",
+    "static/media/GR4.png": "/Porfolio/static/media/GR4.9fb01acf0ffc1e328e1a.png",
+    "static/media/HeadShot2.jpg": "/Porfolio/static/media/HeadShot2.19b38fd29f67fffa10c4.jpg",
+    "static/media/Up5_5.png": "/Porfolio/static/media/Up5_5.2d6b311138383a0ad6a2.png",
+    "static/media/movie2.png": "/Porfolio/static/media/movie2.f32c51af224f88f51b8f.png",
+    "static/media/Wife.jpg": "/Porfolio/static/media/Wife.b35d45f93de620e6ce1e.jpg",
+    "static/media/movie4.png": "/Porfolio/static/media/movie4.1cb8625bb5f4838af1bb.png",
+    "static/media/movie1.png": "/Porfolio/static/media/movie1.2ce0692c1bad8a8b14b1.png",
+    "static/media/movie3.png": "/Porfolio/static/media/movie3.d2d4d8bfe12d5c7ae421.png",
+    "index.html": "/Porfolio/index.html",
+    "main.7e645df5.css.map": "/Porfolio/static/css/main.7e645df5.css.map",
+    "main.cf6e4fd8.js.map": "/Porfolio/static/js/main.cf6e4fd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e645df5.css",
+    "static/js/main.cf6e4fd8.js"
+  ]
+}
