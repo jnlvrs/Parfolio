@@ -15,6 +15,7 @@ function Connect() {
         (error) => {
           console.log(error.text);
       });
+      alert("Message has been sent!");
       e.target.reset()
   };
   return (
