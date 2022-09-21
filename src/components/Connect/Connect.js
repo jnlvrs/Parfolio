@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Connect.css";
+import * as BsIcons from "react-icons/bs"
+import * as IoIcons from "react-icons/io"
 function Connect() {
   const form = useRef();
 
@@ -15,9 +17,13 @@ function Connect() {
         (error) => {
           console.log(error.text);
       });
-      alert("Message has been sent!");
+      toggle()
       e.target.reset()
   };
+
+  const [success, setSuccess] = useState(false);
+  const toggle = () => setSuccess(!success);
+  
   return (
     <div id="Connect" className="connect-container bg3">
       <div className="formSection canvas bxs">
@@ -43,8 +49,17 @@ function Connect() {
               <label htmlFor="message" />
               <textarea type="text" className="inputFields hl1 bg3" id="message" name="message" placeholder="Message" required />
             </div>
-            <div id="center-btn">
-              <input type="submit" className="send-btn bg3" id="send-btn" name="send" alt="send" value="Send" />
+            <div className="center-btn-banner">
+              {success ? 
+              <input type="submit" className="send-btn bg3" id="send-btn" name="send" alt="send" value="Send"/> 
+              : 
+              <div className="banner success">
+                <div className="check-message">
+                  <BsIcons.BsCheckCircleFill size={25} className="success-check"/>
+                  <div className="banner-message">Message Sent!</div>
+                </div>
+                <button className="banner-close" onClick={toggle}><IoIcons.IoMdClose size={30} /></button>
+              </div> }  
             </div>
           </div>
         </form>

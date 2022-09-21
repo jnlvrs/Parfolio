@@ -52,6 +52,10 @@
   width: 215px;
   height: 100px;
 }
+.center-btn-banner {
+  display: flex;
+  justify-content: center;
+}
 
 .send-btn {
   border: 1px solid var(--highlight);
@@ -67,8 +71,75 @@
   background: rgba(20, 20, 20, 1);
   padding: 10px 80px;
 }
+
+.banner {
+  background: #10c1a4;
+  color: white;
+  font-size: 18px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+}
+
+.success-check {
+  padding-right: 10px
+}
+.banner-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.banner-close:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.banner.success::after {
+  background: #10c15c;
+}
+
+/* .banner::after {
+  content: "";
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+} */
+
+.banner:not(.success) {
+  display: none;
+  transform: translateY(0%);
+}
+
+.banner.success {
+  animation-name: banner-in;
+  animation-direction: forwards;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes banner-in {
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media screen and (min-width: 768px){ 
-    .formSection {
+  .formSection {
     width: 80%;
   }
   .inputFields {
@@ -77,6 +148,11 @@
   #message {
     width: 315px;
     height: 150px;
+  }
+  .check-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1020px){
