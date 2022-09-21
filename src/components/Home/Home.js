@@ -11,24 +11,24 @@ function Home() {
         <br />
         <div className="rt-container">
           <h2>
-            A
+            
             <ReactRotatingText
               items={[
-                " Full Stack Developer",
-                " Husband",
-                " Web Developer",
-                " Father",
-                " Software Engineer",
-                " Friend",
-                " Software Developer",
-                "nalytical Thinker",
-                " JavaScript Developer",
-                " Critical Thinker",
-                " Front End Developer",
-                " Movie Enthusiast",
-                " React Developer",
-                " Coder",
-                " Programmer",
+                "Full Stack Developer",
+                "Husband",
+                "Web Developer",
+                "Father",
+                "Software Engineer",
+                "Friend",
+                "Software Developer",
+                "Analytical Thinker",
+                "JavaScript Developer",
+                "Critical Thinker",
+                "Front End Developer",
+                "Movie Enthusiast",
+                "React Developer",
+                "Coder",
+                "Programmer",
               ]}
             />
           </h2>
