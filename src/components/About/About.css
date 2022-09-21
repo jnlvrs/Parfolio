@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   z-index: 2;
 }
 
@@ -215,7 +215,9 @@
   display:none;
 }
 @media screen and (min-width: 768px){
-  
+  .about-container{
+    height: 100vh;
+  }
   .about-heading-container h2 {
     font-size: 45px;
   }

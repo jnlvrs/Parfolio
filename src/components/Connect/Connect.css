@@ -23,7 +23,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   /* ----this creates the line between form and text------- */
-  border-bottom: 10px solid rgba(30, 30, 30, 0.8);
+  border-bottom: 10px solid rgba(255, 166, 0);
 }
 
 .info h2 {
@@ -94,7 +94,7 @@
     padding:0 10px;
     height: 500px;
     width: 330px;
-    border-right: 10px solid rgba(30, 30, 30, 0.8);
+    border-right: 10px solid rgba(255, 166, 0);
     border-bottom: none;
   }
   .sendForm {

@@ -20,11 +20,11 @@ const ProjectData = [
     images: [
       {
         id: 1,
-        img: movie1,
+        img: movie2,
       },
       {
         id: 2,
-        img: movie2,
+        img: movie1,
       },
       {
         id: 3,
@@ -85,7 +85,7 @@ const ProjectData = [
     ],
   },
   {
-    title: "Custom Pcs",
+    title: "Custom PCs",
     link: "https://github.com/jnlvrs/computerSite",
     images: [
       {
