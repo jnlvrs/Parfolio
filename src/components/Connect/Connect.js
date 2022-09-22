@@ -21,7 +21,7 @@ function Connect() {
       e.target.reset()
   };
 
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
   const toggle = () => setSuccess(!success);
   
   return (
